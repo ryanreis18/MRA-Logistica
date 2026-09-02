@@ -18,20 +18,16 @@ Este projeto está sendo desenvolvido como um aplicativo focado em logística pa
 # API utilizada
 
 ## Rastreamento
-Tecnologia Recomendada: Biblioteca Open Source no seu servidor
-Tipo de Gratuidadde: 100% Gratuita e Ilimitada
+ Biblioteca Open Source no seu servidor
 
 ## Mapa e Rotas
-Tecnologia Recomendada: Leaflet + Servidor próprio OSRM
-Tipo de Gratuidadde: 100% Gratuita e Ilimitada
+ Leaflet + Servidor próprio OSRM
 
 ## Pagamento
-Tecnologia Recomendada: API do Mercado Pago ou Asaas
-Tipo de Gratuidadde: Gratuita (Paga apenas comissão por venda)
+ API do Mercado Pago 
 ## Clima
 
-Tecnologia Recomendada: API Open-Meteo
-Tipo de Gratuidadde: Gratuita até 10 mil chamadas/dia
+ API Open-Meteo
 
 # Banco de Dados utilizado
 
