@@ -24,7 +24,7 @@ Este projeto está sendo desenvolvido como um aplicativo focado em logística pa
  Leaflet + Servidor próprio OSRM
 
 ## Pagamento
- API do Mercado Pago 
+ API do Mercado Pago para efetuar pagamentos e para a movimentação financeira.
 ## Clima
 
  API Open-Meteo
