@@ -32,7 +32,7 @@ Este projeto está sendo desenvolvido como um aplicativo focado em logística pa
 
 ## Clima
 
- API Open-Meteo
+Previsão do tempo via [Open-Meteo](https://open-meteo.com/) (temperatura, chuva e vento), coletada periodicamente em segundo plano e armazenada no PostgreSQL. Os dados alimentam alertas de risco de atraso nas rotas e entregas.
 
 # Banco de Dados utilizado
 
