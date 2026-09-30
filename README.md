@@ -1,6 +1,6 @@
 # Descrição 
 
-Este projeto está sendo desenvolvido como um aplicativo focado em logística para ajudar pequenos comércios, utilizando a biblioteca widget (Flutter) para construir interface com informações sobre o cliente, local, motorista, veículo e carga.
+Este projeto está sendo desenvolvido como um aplicativo focado em logística para ajudar pequenos comércios, utilizando o framework **Flutter** para construir interfaces com informações sobre o cliente, local, motorista, veículo e carga.
 
 # Funcionalidades
 
@@ -27,29 +27,22 @@ O sistema utiliza uma biblioteca e infraestrutura de código aberto auto-hospeda
 * **Comunicação em Tempo Real:** Mantém conexões persistentes para atualizar a posição dos veículos na interface do usuário, sem a necessidade de recarregar a página.
 * **Histórico e Telemetria:** Registra o rastro do percurso percorrido e monitora eventos importantes do trajeto (como velocidade, paradas e status de ignição).
 
-
 ## Mapa e Rotas
-### Mapa e Rotas
 
 *   **flutter_map**: Pacote do Flutter para renderizar mapas interativos e marcadores diretamente na interface do app.
-Mostra o mapa no app: exibe o mapa interativo, os marcadores (motorista, cliente, destino) e a linha do trajeto. Ele só desenha e não calcula nada.
 *   **Servidor OSRM**: Motor de roteamento próprio integrado via requisições HTTP para cálculo de trajetos e distâncias.
-OSRM calcula as rotas no seu servidor: recebe origem e destino e devolve o caminho pelas ruas, a distância e o tempo estimado. Ele não mostra mapa nem considera trânsito em tempo real.
 
 ## Pagamento
-### Pagamento
 
-*   **API do Mercado Pago** via SDK oficial (`mercadopago`).
-*   **Checkout Pro** para redirecionamento seguro de pagamentos.
-*   **Checkout Transparente** para geração e recebimento via **Pix**.
+*   **API do Mercado Pago**: Integração direta via requisições HTTP (`Dio` / `Http`) no ecossistema Dart/Flutter.
+*   **Checkout Pro**: Redirecionamento seguro para a interface do Mercado Pago.
+*   **Checkout Transparente**: Geração e exibição de **Pix** (Copia e Cola / QR Code) direto no app.
 
 ## Clima
 
-Previsão do tempo via [Open-Meteo](https://open-meteo.com/)
-A Open-Meteo é uma API gratuita de clima: envia latitude e longitude e ela devolve a previsão (temperatura, chuva, vento) hora a hora, além de dados históricos.
-
-No sistema, ela alimenta o PostgreSQL com previsões coletadas em segundo plano, e esses dados são usados para alertar motoristas e clientes sobre condições que possam atrasar entregas.
+*   **Open-Meteo API**: API gratuita de clima que fornece previsões (temperatura, chuva, vento) com base em coordenadas geográficas.
+*   **Integração**: Coleta dados em segundo plano para alimentar o PostgreSQL, gerando alertas de possíveis atrasos nas entregas devido ao clima.
 
 # Banco de Dados utilizado
 
-## Postgresql
+*   **PostgreSQL**: Banco de dados relacional para persistência de dados de usuários, rotas, histórico e logs de telemetria.
