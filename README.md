@@ -29,7 +29,10 @@ O sistema utiliza uma biblioteca e infraestrutura de código aberto auto-hospeda
 
 
 ## Mapa e Rotas
- Leaflet + Servidor próprio OSRM
+### Mapa e Rotas
+
+*   **flutter_map**: Pacote do Flutter para renderizar mapas interativos e marcadores diretamente na interface do app.
+*   **Servidor OSRM**: Motor de roteamento próprio integrado via requisições HTTP para cálculo de trajetos e distâncias.
 
 ## Pagamento
 ### Pagamento
