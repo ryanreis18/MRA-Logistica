@@ -18,7 +18,15 @@ Este projeto está sendo desenvolvido como um aplicativo focado em logística pa
 # API utilizada
 
 ## Rastreamento
- Biblioteca Open Source no seu servidor
+
+### 📡 Infraestrutura de Rastreamento (Servidor Open Source)
+
+O sistema utiliza uma biblioteca e infraestrutura de código aberto auto-hospedada no back-end para gerenciar a telemetria da frota em tempo real:
+
+* **Processamento de Coordenadas:** Recebe continuamente os pacotes de dados de localização (latitude e longitude) transmitidos pelo aplicativo do motorista ou por rastreadores dedicados.
+* **Comunicação em Tempo Real:** Mantém conexões persistentes para atualizar a posição dos veículos de forma instantânea na interface do usuário, sem a necessidade de recarregar a página.
+* **Histórico e Telemetria:** Registra o rastro do percurso percorrido e monitora eventos importantes do trajeto (como velocidade, paradas e status de ignição).
+
 
 ## Mapa e Rotas
  Leaflet + Servidor próprio OSRM
