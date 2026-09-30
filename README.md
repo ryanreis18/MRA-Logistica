@@ -24,7 +24,12 @@ Este projeto está sendo desenvolvido como um aplicativo focado em logística pa
  Leaflet + Servidor próprio OSRM
 
 ## Pagamento
- API do Mercado Pago para efetuar pagamentos e para a movimentação financeira.
+### Pagamento
+
+*   **API do Mercado Pago** via SDK oficial (`mercadopago`).
+*   **Checkout Pro** para redirecionamento seguro de pagamentos.
+*   **Checkout Transparente** para geração e recebimento via **Pix**.
+
 ## Clima
 
  API Open-Meteo
