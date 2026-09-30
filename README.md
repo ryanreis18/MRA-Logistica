@@ -40,7 +40,10 @@ O sistema utiliza uma biblioteca e infraestrutura de código aberto auto-hospeda
 
 ## Clima
 
-Previsão do tempo via [Open-Meteo](https://open-meteo.com/) (temperatura, chuva e vento), coletada periodicamente em segundo plano e armazenada no PostgreSQL. Os dados alimentam alertas de risco de atraso nas rotas e entregas.
+Previsão do tempo via [Open-Meteo](https://open-meteo.com/)
+A Open-Meteo é uma API gratuita de clima: você envia latitude e longitude e ela devolve a previsão (temperatura, chuva, vento) hora a hora, além de dados históricos.
+
+No seu sistema, ela alimenta o PostgreSQL com previsões coletadas em segundo plano, e você usa esses dados para alertar motoristas e clientes sobre condições que possam atrasar entregas.
 
 # Banco de Dados utilizado
 
