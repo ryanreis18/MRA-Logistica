@@ -30,7 +30,9 @@ O sistema utiliza uma biblioteca e infraestrutura de código aberto auto-hospeda
 ## Mapa e Rotas
 
 *   **flutter_map**: Pacote do Flutter para renderizar mapas interativos e marcadores diretamente na interface do app.
+*   Mostra o mapa no app: exibe o mapa interativo, os marcadores (motorista, cliente, destino) e a linha do trajeto. Ele só desenha e não calcula nada.
 *   **Servidor OSRM**: Motor de roteamento próprio integrado via requisições HTTP para cálculo de trajetos e distâncias.
+*   Calcula as rotas no seu servidor: recebe origem e destino e devolve o caminho pelas ruas, a distância e o tempo estimado. Ele não mostra mapa nem considera trânsito em tempo real.
 
 ## Pagamento
 
